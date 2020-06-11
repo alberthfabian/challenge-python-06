@@ -1,7 +1,9 @@
-def make_division_by(n):
-    """This closure returns a function that returns the division
-       of an x number by n 
-    """
+def make_division_by(i):
+
+    def divided(n):
+        # assert type(n) == int, 'Solo puedes ingre'
+        return round(n /i)
+    return divided
     # You have to code here!
     pass
 
